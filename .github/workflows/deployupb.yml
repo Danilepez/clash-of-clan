@@ -9,7 +9,7 @@ jobs:
 
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v4 #plugin para clonar el repositorio
 
       - name: Copy files via SCP
         uses: appleboy/scp-action@v0.1.7 #plugin para copiar archivos via SCP
