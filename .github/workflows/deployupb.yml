@@ -14,8 +14,8 @@ jobs:
       - name: Copy files via SCP
         uses: appleboy/scp-action@v0.1.7 #plugin para copiar archivos via SCP
         with:
-          host: ${{ secrets.EC2_HOST }}
-          username: ${{ secrets.EC2_USER }}
-          key: ${{ secrets.EC2_KEY }}
+          host: ${{ secrets.EC2_HOST }} #direccion IP de la instancia EC2
+          username: ${{ secrets.EC2_USER }}  #usuario para acceder a la instancia EC2
+          key: ${{ secrets.EC2_KEY }} #llave privada para acceder a la instancia EC2
           source: "index.html"
           target: "/var/www/html"
